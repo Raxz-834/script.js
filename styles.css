@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+}
+
+.heart {
+    font-size: 100px;
+    color: red;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+h1 {
+    color: #333;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff4747;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ff7474;
+}
+
+/* Gaya tombol WhatsApp */
+.whatsapp-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.whatsapp-button:hover {
+    background-color: #1EBB59;
+}
+
+/* Responsif untuk HP */
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+    .heart {
+        font-size: 70px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    button, .whatsapp-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    #background-music {
+        width: 100%;
+    }
+}
